@@ -1,5 +1,5 @@
 :root {
-  --primaria: #000000;
+  --primaria: #063550;
   --secundaria: #ecf0f1;
   --destaque: #e67e22;
 }
@@ -18,7 +18,7 @@
   padding: 1rem;
 }
 .logo {
-  height: 150px;
+  height: 200px;
 }
 nav {
   display: flex;
