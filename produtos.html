@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos - Tripinha Materiais</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header-logo">
+    <img src="imagens/logo-removebg-preview.png" alt="Logo Tripinha Materiais" class="logo">
+    <div>
+      <h1>Tripinha Materiais</h1>
+      <p>Tudo Para A Sua Obra</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Promoções</a>
+    <a href="produtos.html">Produtos</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="#" onclick="abrirModal('login')">Login</a>
+    <a href="#" onclick="abrirModal('cadastro')">Cadastro</a>
+  </nav>
+
+  <main class="container">
+    <div class="produto2">
+      <img src="imagens/cimento-removebg-preview.png" alt="Cimento" style="width:100%; height:150px; object-fit:cover;">
+      <h2>Cimento</h2>
+      <p>50kg - Alta qualidade</p>
+      <p><strong>R$ 35,00</strong></p>
+      <a href="compra.html" class="btn">Comprar</a>
+    </div>
+    <div class="produto2">
+      <img src="imagens/tijolo-removebg-preview.png" alt="Tijolo" style="width:100%; height:150px; object-fit:cover;">
+      <h2>Tijolo</h2>
+      <p>Tijolo cerâmico</p>
+      <p><strong>R$ 1,20</strong></p>
+      <a href="compra.html" class="btn">Comprar</a>
+    </div>
+    <div class="produto2">
+      <img src="imagens/tinta-removebg-preview.png" alt="Tinta" style="width:100%; height:150px; object-fit:cover;">
+      <h2>Tinta</h2>
+      <p>Latex branca - 18L</p>
+      <p><strong>R$ 85,00</strong></p>
+      <a href="compra.html" class="btn">Comprar</a>
+    </div>
+    <div class="produto2">
+      <img src="imagens/tabuas-removebg-preview.png" alt="Madeira" style="width:100%; height:150px; object-fit:cover;">
+      <h2>Madeira</h2>
+      <p>Tábuas de pinus tratadas</p>
+      <p><strong>R$ 18,00</strong></p>
+      <a href="compra.html" class="btn">Comprar</a>
+    </div>
+    <div class="produto2">
+      <img src="imagens/pia-removebg-preview.png" alt="Pia" style="width:100%; height:150px; object-fit:cover;">
+      <h2>Pia de Mármore</h2>
+      <p>Pia de Mármore Sintético 1,50 com Cuba Inox Inclusa - Slin</p>
+      <p><strong>R$ 550,00</strong></p>
+      <a href="compra.html" class="btn">Comprar</a>
+    </div>
+    <div class="produto2">
+      <img src="imagens/cano-removebg-preview.png" alt="Cano" style="width:100%; height:150px; object-fit:cover;">
+      <h2>Cano Flexivel</h2>
+      <p><strong>R$ 8,50</strong></p>
+      <a href="compra.html" class="btn">Comprar</a>
+    </div>
+    <div class="produto2">
+      <img src="imagens/ralo-removebg-preview.png" alt="Ralo" style="width:100%; height:150px; object-fit:cover;">
+      <h2>Ralo Sinfonado</h2>
+      <p>Ralo sinfonado Para Banheiro</p>
+      <p><strong>R$ 35,00</strong></p>
+      <a href="compra.html" class="btn">Comprar</a>
+    </div>
+    <div class="produto2">
+      <img src="imagens/areia-removebg-preview.png" alt="Areia" style="width:100%; height:150px; object-fit:cover;">
+      <h2>Areia Fina Lavada</h2>
+      <p>Por Metro Cubico</p>
+      <p><strong>R$ 60,00</strong></p>
+      <a href="compra.html" class="btn">Comprar</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tripinha Materiais - Todos os direitos reservados</p>
+  </footer>
+  <div class="modal" id="modal-login">
+    <div class="modal-conteudo">
+      <h2>Login</h2>
+      <input type="text" placeholder="Usuário">
+      <input type="password" placeholder="Senha">
+      <button class="btn" onclick="fecharModal('login')">Entrar</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-cadastro">
+    <div class="modal-conteudo">
+      <h2>Cadastro</h2>
+      <input type="text" placeholder="Nome completo">
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Senha">
+      <button class="btn" onclick="fecharModal('cadastro')">Cadastrar</button>
+    </div>
+  </div>
+
+  <script>
+    function abrirModal(tipo) {
+      document.getElementById('modal-' + tipo).style.display = 'flex';
+    }
+    function fecharModal(tipo) {
+      document.getElementById('modal-' + tipo).style.display = 'none';
+    }
+  </script>
+</body>
+</html>

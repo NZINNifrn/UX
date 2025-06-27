@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nós - Tripinha Materiais</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header-logo">
+    <img src="imagens/logo-removebg-preview.png" alt="Logo Tripinha Materiais" class="logo">
+    <div>
+        <h1>Tripinha Materiais</h1>
+        <p>Tudo Para A Sua Obra</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Promoções</a>
+    <a href="produtos.html">Produtos</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="#" onclick="abrirModal('login')">Login</a>
+    <a href="#" onclick="abrirModal('cadastro')">Cadastro</a>
+  </nav>
+
+  <main class="container" style="grid-template-columns: 1fr; max-width: 900px; margin: auto;">
+    <section class="produto3">
+      <h2>Nossa História</h2>
+      <p>Fundada em 2010, a <strong>Tripinha Materiais</strong> nasceu com o propósito de facilitar o acesso a materiais de construção de qualidade para toda a população com a unidade sede em <Strong>NATAL-RN</Strong>, ja atendemos mais de 500 mil pessoas por todo o Brasil.</p>
+    </section>
+
+    <section class="produto3">
+      <h2>Missão, Visão e Valores</h2>
+      <ul>
+        <li><strong>Missão:</strong> Fornecer os melhores materiais com preços justos e atendimento de excelência.</li>
+        <li><strong>Visão:</strong> Ser referência no comércio online de materiais de construção até 2030.</li>
+        <li><strong>Valores:</strong> Comprometimento, respeito, sustentabilidade e inovação.</li>
+      </ul>
+    </section>
+
+    <section class="produto3">
+      <h2>Informações de Contato</h2>
+      <p><strong>Telefone:</strong> (84) 94002-8922</p>
+      <p><strong>Email:</strong> atendimento@tripinha.com.br</p>
+      <p><strong>Endereço:</strong> Rua Irineu, 171 - Alecrim, Natal - RN</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tripinha Materiais - Todos os direitos reservados</p>
+  </footer>
+
+  <div class="modal" id="modal-login">
+    <div class="modal-conteudo">
+      <h2>Login</h2>
+      <input type="text" placeholder="Usuário">
+      <input type="password" placeholder="Senha">
+      <button class="btn" onclick="fecharModal('login')">Entrar</button>
+    </div>
+  </div>
+  <div class="modal" id="modal-cadastro">
+    <div class="modal-conteudo">
+      <h2>Cadastro</h2>
+      <input type="text" placeholder="Nome completo">
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Senha">
+      <button class="btn" onclick="fecharModal('cadastro')">Cadastrar</button>
+    </div>
+  </div>
+  <script>
+    function abrirModal(tipo) {
+      document.getElementById('modal-' + tipo).style.display = 'flex';
+    }
+  
+    function fecharModal(tipo) {
+      document.getElementById('modal-' + tipo).style.display = 'none';
+    }
+  </script>
+</body>
+</html>
